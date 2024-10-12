@@ -1,6 +1,6 @@
 # Nodejs-Pipeline-Demo
 
-A Nodejs API app with Unit test cases added
+A Nodejs API app with Unit test case
 
 Currently the app
 
