@@ -11,5 +11,10 @@ pipeline {
                 echo 'npm test for fixes'
             }
         }
+        stage('Deploy to staging..') { 
+            steps {
+                echo 'Deploying to staging server: stage.devops.com'
+            }
+        }
     }
 }
