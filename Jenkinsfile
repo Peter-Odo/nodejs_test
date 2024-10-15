@@ -11,5 +11,10 @@ pipeline {
                 echo 'npm test'
             }
         }
+        stage('Deploy to live site') { 
+            steps {
+                echo 'Deploying to Live site: devops.com'
+            }
+        }
     }
 }
