@@ -1,14 +1,14 @@
 pipeline {
     agent any
     stages {
-        stage('Build node_modules') {
+        stage('Build node_modules for fixes') {
             steps {
-                echo 'npm install'
+                echo 'npm install for fixes'
             }
         }
-        stage('Run UTs') { 
+        stage('Run UTs for fixes') { 
             steps {
-                echo 'npm test'
+                echo 'npm test for fixes'
             }
         }
     }
