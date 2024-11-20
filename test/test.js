@@ -11,7 +11,7 @@ describe("The normal endpoints", function () {
       .request(app)
       .get("/users")
       .then(function (res) {
-        expect(res).to.have.status(400);
+        expect(res).to.have.status(200);
         expect(res).to.be.string;
       });
   });
