@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build node_modules for Jenkins') {
+        stage('Build node_modules for Jenkins Webhooks') {
             steps {
                 echo 'npm install for Jenkins'
             }
