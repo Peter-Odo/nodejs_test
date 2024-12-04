@@ -14,9 +14,9 @@ pipeline {
         stage('Run Integration Test') { 
             when {
                 branch: 'fix/pipeline'
-            }
             steps {
                echo 'npm run int test'
+            }
             }
         }
         stage('Deploy to staging..') { 
