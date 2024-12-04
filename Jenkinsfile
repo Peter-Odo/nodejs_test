@@ -1,14 +1,22 @@
 pipeline {
     agent any
     stages {
-        stage('Build node_modules for Jenkins Fixes') {
+        stage('Build node_modules Fixes') {
             steps {
                 echo 'npm install'
             }
         }
-        stage('Run UTs for Jenkins') { 
+        stage('Run UTs') { 
             steps {
                echo 'npm run test'
+            }
+        }
+        stage('Run Integration Test') { 
+            when {
+                branch: 'fix/pipeline'
+            }
+            steps {
+               echo 'npm run int test'
             }
         }
         stage('Deploy to staging..') { 
