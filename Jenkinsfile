@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Build node_modules for Jenkins Master') {
+        stage('Build node_modules for Jenkins Fixes') {
             steps {
                 echo 'npm install'
             }
